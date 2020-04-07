@@ -14,3 +14,12 @@ export const INPUT_FEILD = {
 }
 
 export const FONT_FAMILY = ["Segoe UI","Segoe UI Emoji","Segoe UI Symbol"];
+
+export const TEXT_AREA = {
+    PRIMARY_BORDER_COLOR: '#10D4C3',
+    PRIMARY_BACKGROUND_COLOR: 'white',
+    PRIMARY_TEXT_COLOR: '#595959',
+    SECONDARY_BORDER_COLOR: '#707070',
+    SECONDARY_BACKGROUND_COLOR: '#F2F2F2',
+    SECONDARY_TEXT_COLOR: 'black',
+}

@@ -1,0 +1,11 @@
+.textarea-container {
+    border-radius: 5px;
+    resize: none;
+    font-size: 20px;
+    color: #595959;
+    font-family: 'Segoe UI';
+}
+
+.textarea-container:focus {
+    outline: none;
+}
