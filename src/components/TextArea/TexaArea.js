@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { TEXT_AREA, TEXT } from '../../utils/theme';
+import { TEXT_AREA } from '../../utils/theme';
 import './TextArea.css';
 
-export const TexaArea = ({ rows, cols, placeholder, onValue, secondary=false }) => {
+export const TextArea = ({ rows, cols, placeholder, onValue, secondary=false }) => {
     const [ text, setText ] = useState('');
     useEffect(()=> {
         setText(onValue);
@@ -25,6 +25,7 @@ export const TexaArea = ({ rows, cols, placeholder, onValue, secondary=false }) 
             placeholder={placeholder} 
             value={text}
             onChange={e => setText(e.target.value)}
+            readOnly={secondary}
         >
             {text}
         </textarea>

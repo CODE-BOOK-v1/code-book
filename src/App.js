@@ -1,13 +1,13 @@
 import React from 'react'
 import './App.css'
 
-import { TexaArea } from './components/TextArea/TexaArea'
+import { CreatePost } from './components/CommentSection/Main'
 
 const App = () => {
- 
+
     return (
         <div>
-            <TexaArea rows={6} cols={50} secondary={false} placeholder="enter text"/>
+            <CreatePost />
         </div>
     )
 }

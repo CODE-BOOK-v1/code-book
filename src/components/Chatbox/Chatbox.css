@@ -1,0 +1,15 @@
+.chat-box-container {
+    background-color: #F2F2F2;
+    width: 320px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 12px;
+    color: #595959;
+}
+
+.chat-box-container:focus {
+    outline: none;
+}

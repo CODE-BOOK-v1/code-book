@@ -2,10 +2,11 @@
     position: fixed;
     border: 2px solid white;
     z-index: 999999;
-    top: 20%;
+    top: 23%;
     left: 50%;
-    transform: translate(-50%, -50%);  
+    transform: translate(-50%, -20%);  
     background-color: white;
+    border-radius: 5px;
 }
 
 .modal-overlay {

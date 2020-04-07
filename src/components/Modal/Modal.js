@@ -1,12 +1,24 @@
 import React, { Fragment } from 'react'
+import CloseIcon from '@material-ui/icons/Close';
+import { withStyles } from '@material-ui/core/styles'
 import './Modal.css'
 
-export const Modal = ({ component, display }) => {
+const StyledCloseIcon = withStyles({
+    root: {
+        color: 'white',
+        fontSize: 40,
+        marginTop: 30,
+        marginLeft: '83%'
+    }
+})(CloseIcon);
+
+export const Modal = ({ Component, display, height, width, closeHandler }) => {
     if(display) {
         return (
             <div className="modal-overlay">
-                <div className="modal-container">
-                    {component}
+                <StyledCloseIcon onClick={()=> closeHandler(false)}/>
+                <div className="modal-container" style={{height, width}}>
+                    <Component />
                 </div>
             </div>
         )
